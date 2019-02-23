@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "description": "Survivor Michigan Season 4 Final 7 Challenge",
   "main": "index.js",
+  "homepage": "https://kev-begic.github.io/timed45",
   "scripts": {
     "test": "echo \"Hello Survivor!\"",
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Kevin Begic",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0"
   }
 }

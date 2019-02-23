@@ -5,9 +5,9 @@ Timed 45 is a psychological immunity challenge that requries competitors to deci
 
 The project was created by Kevin Begic on February 23rd, 2019 for Survivor Michigan: Wolverine Wars. 
 
-## Linkk
+## Link
 
-Insert github link below
+* [Timed 45](https://kev-begic.github.io/timed45) - Link for Challenge
 
 ### Play at Home!
 
