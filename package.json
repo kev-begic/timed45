@@ -10,7 +10,7 @@
     "deploy": "gh-pages -d dist"
   },
   "author": "Kevin Begic",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0"
