@@ -1,0 +1,86 @@
+@import 'config';
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    word-spacing: 8px;
+    letter-spacing: 1px;
+
+}
+
+body {
+    @include background();
+    background: $primary-color;
+    padding-top: 50px;
+    font-family: 'Acme', sans-serif;
+}
+
+main {
+    margin: 5px;
+    text-align: center;
+    color: #f4d975e3;
+}
+
+h1 
+{
+    font-size: 33px;
+    margin: 35px;
+    margin-top: 0px;
+    color: $alternate-color;
+}
+
+li.odd 
+{
+    color: $alternate-color;
+}
+
+span#text-secondary 
+{
+    font-size: 80px;
+    font-family: 'Special Elite', cursive;
+    border: 15px;
+    color: $secondary-color;
+    
+}
+
+h2 {
+    display: inline-block;
+    text-align: justify;
+    font-size: 25px;
+    margin: 2px;
+    text-transform: uppercase;
+}
+
+button {
+    margin: 5px;
+    font-family: 'Acme', sans-serif;
+    display: none;
+}
+
+h3 {
+    font-size: 35px;
+    margin: 25px;
+
+    &#paused {
+        font-family: 'Special Elite', cursive;
+    }
+
+    &#how {
+        color: $alternate-color;
+    }
+}
+
+#clockdiv {
+    font-family: 'Special Elite', cursive;
+    display: inline-block;
+    text-align: center;
+    font-size: 100px;
+    border: 2px solid $alternate-color;
+    border-radius: 5px;
+    width: 450px;
+    padding: 15px;
+    padding-top: 30px; 
+    align-content: center;
+}

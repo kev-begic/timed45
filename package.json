@@ -1,0 +1,15 @@
+{
+  "name": "timed45",
+  "version": "1.0.0",
+  "description": "Survivor Michigan Season 4 Final 7 Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Hello Survivor!\"",
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Kevin Begic",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

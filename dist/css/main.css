@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  word-spacing: 8px;
+  letter-spacing: 1px; }
+
+body {
+  background: #181F38;
+  padding-top: 50px;
+  font-family: 'Acme', sans-serif; }
+  body#bg-img {
+    background: url(../img/Season4_Logo.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+    body#bg-img:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: rgba(24, 31, 56, 0.95); }
+
+main {
+  margin: 5px;
+  text-align: center;
+  color: #f4d975e3; }
+
+h1 {
+  font-size: 33px;
+  margin: 35px;
+  margin-top: 0px;
+  color: #ffdb20e3; }
+
+li.odd {
+  color: #ffdb20e3; }
+
+span#text-secondary {
+  font-size: 80px;
+  font-family: 'Special Elite', cursive;
+  border: 15px;
+  color: #f4d975e3; }
+
+h2 {
+  display: inline-block;
+  text-align: justify;
+  font-size: 25px;
+  margin: 2px;
+  text-transform: uppercase; }
+
+button {
+  margin: 5px;
+  font-family: 'Acme', sans-serif;
+  display: none; }
+
+h3 {
+  font-size: 35px;
+  margin: 25px; }
+  h3#paused {
+    font-family: 'Special Elite', cursive; }
+  h3#how {
+    color: #ffdb20e3; }
+
+#clockdiv {
+  font-family: 'Special Elite', cursive;
+  display: inline-block;
+  text-align: center;
+  font-size: 100px;
+  border: 2px solid #ffdb20e3;
+  border-radius: 5px;
+  width: 450px;
+  padding: 15px;
+  padding-top: 30px;
+  align-content: center; }
