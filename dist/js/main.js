@@ -1,6 +1,5 @@
-
 // 10 minutes from now
-let timeMinutes = 45.15;
+let timeMinutes = 45.2;
 let currentTime = Date.parse(new Date());
 let deadline = new Date(currentTime + timeMinutes*60*1000);
 
@@ -39,6 +38,16 @@ function run(id, endtime)
         else
         {
             clock.innerHTML = timeLeft.minutes + ':' + timeLeft.seconds;
+        }
+
+        if (timeLeft.minutes == 0 && timeLeft.seconds == 0)
+        {      
+            document.getElementById('paused').innerHTML = "Timer Reached 0:00! No One Wins Immunity";
+            document.getElementById('paused').style.color = '#e23d3de3';
+            document.getElementById('clockdiv').innerHTML = ":(";
+            document.getElementById('clockdiv').style.color = '#e23d3de3';
+            document.getElementById('clockdiv').style.borderColor = '#e23d3de3'
+            document.getElementById('text-secondary').style.color = '#e23d3de3';
         }
         
         if (playersLeft <= 0)
