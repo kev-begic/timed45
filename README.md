@@ -7,9 +7,9 @@ The project was created by Kevin Begic on February 23rd, 2019 for Survivor Michi
 
 ## Link
 
-* [Timed 45](https://kev-begic.github.io/timed45) - Link for Challenge
+* [Timed 45](https://kev-begic.github.io/timed-forty-five/) - Link for Challenge
 
-### Play at Home!
+## Play at Home!
 
 If you would like to play the game with friends, follow the link below! Reload the website so that the timer may start
 
