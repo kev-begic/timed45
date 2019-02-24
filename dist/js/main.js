@@ -1,14 +1,14 @@
 
 // 10 minutes from now
-var timeMinutes = 45;
-var currentTime = Date.parse(new Date());
-var deadline = new Date(currentTime + timeMinutes*60*1000);
+let timeMinutes = 45.15;
+let currentTime = Date.parse(new Date());
+let deadline = new Date(currentTime + timeMinutes*60*1000);
 
 function timeRemaining(endtime)
 {
-	var total = Date.parse(endtime) - Date.parse(new Date());
-	var seconds = Math.floor( (total/1000) % 60 );
-	var minutes = Math.floor( (total/1000/60) % 60 );
+	let total = Date.parse(endtime) - Date.parse(new Date());
+	let seconds = Math.floor( (total/1000) % 60 );
+	let minutes = Math.floor( (total/1000/60) % 60 );
     
 	return {
         'total': total, 
@@ -17,7 +17,7 @@ function timeRemaining(endtime)
     };
 }
 
-var timeInterval;
+let timeInterval;
 
 function run(id, endtime) 
 {
@@ -27,10 +27,10 @@ function run(id, endtime)
         endtime = 0;
     }
 
-    var clock = document.getElementById(id);
+    let clock = document.getElementById(id);
     
 	function update(){
-        var timeLeft = timeRemaining(endtime);
+        let timeLeft = timeRemaining(endtime);
         
         if (timeLeft.seconds < 10)
         {
@@ -57,14 +57,19 @@ function run(id, endtime)
 }
 
 
-var paused = false; // is the clock paused?
-var timeLeft; // time left on the clock when paused
-var playersLeft = 7; // 
+let paused = false; // is the clock paused?
+let timeLeft; // time left on the clock when paused
+let playersLeft = 7;
 
-if (deadline != 0 && playersLeft > 0) 
+if (deadline != 0) 
 {
-    run('clockdiv', deadline);
+    if (playersLeft > 0)
+    {
+        run('clockdiv', deadline);
+    }
 }
+
+document.getElementById("players-left").innerHTML = playersLeft;
 
 function pauseClock()
 {
@@ -100,6 +105,10 @@ document.body.onkeyup = function(e){
         if (paused)
         {
             resumeClock();
+            document.getElementById('clockdiv').style.backgroundColor = "#181F38";
+            document.getElementById('clockdiv').style.opacity = "0.8";
+
+
             --playersLeft;
             if (playersLeft <= 0)
             {
@@ -132,6 +141,7 @@ document.body.onkeyup = function(e){
         else
         {
             pauseClock();
+            document.getElementById('clockdiv').style.backgroundColor = "#fff";
 
             if (playersLeft <= 0)
             {
